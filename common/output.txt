@@ -1,0 +1,84 @@
+keyword      : void
+WS           :  
+identifier   : main
+WS           :  
+lparen       : (
+rparen       : )
+WS           :  
+lbrace       : {
+SPACE        : 
+    
+keyword      : int
+WS           :  
+identifier   : sum
+WS           :  
+operator     : =
+WS           :  
+number       : 0
+semicolon    : ;
+SPACE        : 
+    
+keyword      : for
+lparen       : (
+keyword      : int
+WS           :  
+identifier   : j
+operator     : =
+number       : 0
+semicolon    : ;
+WS           :  
+identifier   : j
+WS           :  
+operator     : <
+WS           :  
+number       : 10
+semicolon    : ;
+WS           :  
+identifier   : j
+operator     : =
+identifier   : j
+operator     : +
+number       : 1
+rparen       : )
+WS           :  
+lbrace       : {
+SPACE        : 
+        
+identifier   : sum
+WS           :  
+operator     : =
+WS           :  
+identifier   : sum
+WS           :  
+operator     : +
+WS           :  
+identifier   : j
+WS           :  
+operator     : +
+WS           :  
+number       : 10.43
+WS           :  
+operator     : +
+WS           :  
+number       : 34E4
+WS           :  
+operator     : +
+WS           :  
+number       : 45.34
+identifier   : E
+number       : -4
+WS           :  
+operator     : +
+WS           :  
+identifier   : E43
+WS           :  
+operator     : +
+WS           :  
+number       : .34
+semicolon    : ;
+SPACE        : 
+    
+rbrace       : }
+SPACE        : 
+
+rbrace       : }
