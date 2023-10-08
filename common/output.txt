@@ -2,11 +2,11 @@ keyword      : void
 WS           :  
 identifier   : main
 WS           :  
-lparen       : (
-rparen       : )
+(            : (
+)            : )
 WS           :  
-lbrace       : {
-SPACE        : 
+{            : {
+WS           : 
     
 keyword      : int
 WS           :  
@@ -15,34 +15,34 @@ WS           :
 operator     : =
 WS           :  
 number       : 0
-semicolon    : ;
-SPACE        : 
+;            : ;
+WS           : 
     
-keyword      : for
-lparen       : (
+identifier   : for
+(            : (
 keyword      : int
 WS           :  
 identifier   : j
 operator     : =
 number       : 0
-semicolon    : ;
+;            : ;
 WS           :  
 identifier   : j
 WS           :  
 operator     : <
 WS           :  
 number       : 10
-semicolon    : ;
+;            : ;
 WS           :  
 identifier   : j
 operator     : =
 identifier   : j
 operator     : +
 number       : 1
-rparen       : )
+)            : )
 WS           :  
-lbrace       : {
-SPACE        : 
+{            : {
+WS           : 
         
 identifier   : sum
 WS           :  
@@ -64,9 +64,7 @@ number       : 34E4
 WS           :  
 operator     : +
 WS           :  
-number       : 45.34
-identifier   : E
-number       : -4
+number       : 45.34E-4
 WS           :  
 operator     : +
 WS           :  
@@ -74,11 +72,11 @@ identifier   : E43
 WS           :  
 operator     : +
 WS           :  
-number       : .34
-semicolon    : ;
-SPACE        : 
+number       : 34
+;            : ;
+WS           : 
     
-rbrace       : }
-SPACE        : 
+}            : }
+WS           : 
 
-rbrace       : }
+}            : }
