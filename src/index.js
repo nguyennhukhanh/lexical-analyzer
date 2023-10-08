@@ -4,7 +4,6 @@ const moo = require("moo");
 const inputFilePath = "common/input.txt";
 const outputFilePath = "common/output.txt";
 
-// Defines lexer rules
 const lexer = moo.compile({
   WS: /[ \t]+/,
   comment: /\/\/.*?$/,
@@ -46,18 +45,10 @@ const lexer = moo.compile({
     "!",
   ],
   SPACE: { match: /\s+/, lineBreaks: true },
-
-  // Catch error
-  invalid: {
-    match: /\.\.|,,|;;|\)[^\(]*\)|\}[^{]*\}/,
-    error: moo.error,
-  },
 });
 
-// Read input from file
 const input = fs.readFileSync(inputFilePath, "utf-8");
 
-// Lexical analysis
 const tokens = lexer.reset(input);
 
 let output = "";
@@ -66,7 +57,6 @@ try {
     output += `${token.type.padEnd(12)} : ${token.value}\n`;
   }
 
-  // Write file
   fs.writeFileSync(outputFilePath, output);
 } catch (error) {
   console.error("Error: Invalid syntax - " + error.message);
